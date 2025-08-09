@@ -86,7 +86,7 @@ const DogProfileScreen = ({ navigation }) => {
       
       <TouchableOpacity 
         style={styles.vetButton}
-        onPress={() => navigation.navigate('VetBook')}
+        onPress={() => navigation.navigate('Map')}
       >
         <Text style={styles.vetButtonText}>View Vet Records</Text>
       </TouchableOpacity>

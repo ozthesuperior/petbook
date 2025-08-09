@@ -9,33 +9,13 @@ import AddEditProfileScreen from '../screens/AddEditProfileScreen';
 import VetBookScreen from '../screens/VetBookScreen';
 import AddVetRecordScreen from '../screens/AddVetRecordScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import MapScreen from '../screens/MapScreen';
+import PetProfilesScreen from '../screens/PetProfilesScreen';
+import ForumScreen from '../screens/ForumScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const VetBookStackNavigator = () => {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen 
-        name="VetBook" 
-        component={VetBookScreen}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen 
-        name="AddVetRecord" 
-        component={AddVetRecordScreen}
-        options={{ 
-          headerShown: true,
-          headerTitle: 'Add Vet Record',
-          headerTintColor: '#2196F3',
-          headerStyle: {
-            backgroundColor: '#f5f5f5',
-          },
-        }}
-      />
-    </Stack.Navigator>
-  );
-};
 
 const MainTabs = () => {
   return (
@@ -59,8 +39,8 @@ const MainTabs = () => {
         }}
       />
       <Tab.Screen 
-        name="Profile" 
-        component={DogProfileScreen}
+        name="Profiles" 
+        component={PetProfilesScreen}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Icon name="paw" size={size} color={color} />
@@ -68,11 +48,20 @@ const MainTabs = () => {
         }}
       />
       <Tab.Screen 
-        name="VetBook" 
-        component={VetBookStackNavigator}
+        name="Map" 
+        component={MapScreen}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
-            <Icon name="medical" size={size} color={color} />
+            <Icon name="map" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Forum" 
+        component={ForumScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <Icon name="chatbubbles" size={size} color={color} />
           ),
         }}
       />

@@ -25,7 +25,7 @@ const AddEditProfileScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView style={styles.container}>
-        <Text style={[styles.header, { paddingTop: insets.top + 16 }]}>Add New Dog</Text>
+        <Text style={[styles.header, { paddingTop: insets.top + 16 }]}>Add New Pet</Text>
       
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Basic Information</Text>
