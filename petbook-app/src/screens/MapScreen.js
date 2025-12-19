@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 // Map disabled for Expo Go: using a visual placeholder instead of react-native-maps
+import LeafletMap from '../components/LeafletMap';
 
 const MapScreen = ({ route }) => {
   const insets = useSafeAreaInsets();
@@ -104,15 +105,9 @@ const MapScreen = ({ route }) => {
           ))}
         </ScrollView>
         
-        {/* Map Placeholder (UI-only) */}
+        {/* Map: Leaflet on web, placeholder on native via platform file */}
         <View style={styles.mapContainer}>
-          <View style={styles.placeholderBadge}>
-            <Text style={styles.placeholderBadgeText}>Map</Text>
-          </View>
-          <Text style={styles.placeholderTitle}>Map Preview Unavailable</Text>
-          <Text style={styles.placeholderSubtitle}>
-            This is a static placeholder shown in Expo Go. A real map will appear in a dev/prod build.
-          </Text>
+          <LeafletMap locations={locations} selectedFilters={selectedFilters} />
         </View>
         
         {/* Locations List */}
