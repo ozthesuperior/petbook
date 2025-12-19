@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-nati
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 // Map disabled for Expo Go: using a visual placeholder instead of react-native-maps
 import LeafletMap from '../components/LeafletMap';
-
+const variable = 1;
 const MapScreen = ({ route }) => {
   const insets = useSafeAreaInsets();
   const [activeFilter, setActiveFilter] = useState('vet');
