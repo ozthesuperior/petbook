@@ -1,0 +1,6 @@
+@petbookapi_HostAddress = http://localhost:5237
+
+GET {{petbookapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

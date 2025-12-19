@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Erkl4T25e5w4uG1R7ykB33Sv9FtmpZoMYaRLJEECDXk=",
+  "Source": "petbookapi",
+  "BasePath": "_content/petbookapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
