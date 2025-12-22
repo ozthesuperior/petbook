@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("petbookapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be5e3d0445688ac6eb3d72c6a9c8f41028db9d5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+621942507ef6af8ebdb6c0e5c1dc9a5502ef8f05")]
 [assembly: System.Reflection.AssemblyProductAttribute("petbookapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("petbookapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
