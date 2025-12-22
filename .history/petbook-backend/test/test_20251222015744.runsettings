@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <CONNECTION_STRING>
+        postgresql://neondb_owner:npg_R7bYuUcZte2O@ep-aged-breeze-a8q96ksx-pooler.eastus2.azure.neon.tech/neondb?sslmode=require&amp;channel_binding=require
+      </CONNECTION_STRING>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>

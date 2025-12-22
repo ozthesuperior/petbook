@@ -4,14 +4,14 @@
     "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj": {}
   },
   "projects": {
-    "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj": {
+    "/Users/chinurum/Desktop/petbook/petbook-backend/src/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj",
-        "projectName": "test",
-        "projectPath": "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj",
+        "projectUniqueName": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Domain/Domain.csproj",
         "packagesPath": "/Users/chinurum/.nuget/packages/",
-        "outputPath": "/Users/chinurum/Desktop/petbook/petbook-backend/test/obj/",
+        "outputPath": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/chinurum/.nuget/NuGet/NuGet.Config"
@@ -43,10 +43,148 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chinurum/Desktop/petbook/petbook-backend/src/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/chinurum/.nuget/packages/",
+        "outputPath": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chinurum/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/chinurum/Desktop/petbook/petbook-backend/src/Domain/Domain.csproj": {
+                "projectPath": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj",
+        "projectName": "test",
+        "projectPath": "/Users/chinurum/Desktop/petbook/petbook-backend/test/test.csproj",
+        "packagesPath": "/Users/chinurum/.nuget/packages/",
+        "outputPath": "/Users/chinurum/Desktop/petbook/petbook-backend/test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chinurum/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/chinurum/Desktop/petbook/petbook-backend/src/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/chinurum/Desktop/petbook/petbook-backend/src/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.8.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -54,11 +192,13 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.9.2, )"
+              "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.8.2, )"
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
